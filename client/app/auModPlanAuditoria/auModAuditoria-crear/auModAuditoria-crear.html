@@ -1,0 +1,28 @@
+<!-- START RESPONSIVE TABLES -->
+<section>
+	<!--mod-admin-auditor-->
+	<div class="container " style="width:100%">
+		<div class="row">
+			<div>
+				<form action="">
+					<md-input-container>
+						<md-form-field>
+							<md-select ng-model="vm.planAuditoria.tipoAuditoria" placeholder="Favorite food">
+								<md-option>Plan Control Auditorial Calidad</md-option>
+								<md-option>Programa Control Auditoria Interno</md-option>
+								<md-option>Programa Auditoria Control Externo</md-option>
+							</md-select>
+						</md-form-field>
+					</md-input-container>
+					<md-input-container>
+						<md-form-field>
+							<md-select ng-model="vm.planAuditoria.idAuPeriodoPlanAuditoria.id" placeholder="Favorite food">
+								<md-option ng-repeat="item in vm.periodoAuditoria">{{item.anio}}</md-option>
+							</md-select>
+						</md-form-field>
+					</md-input-container>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
