@@ -1,11 +1,15 @@
 'use strict';
 
+
 angular.module('pruebaSaintApp', ['pruebaSaintApp.constants', 
 'ngCookies', 
 'ngResource',
 'ngSanitize',
 'ui.router',
-'ngMaterial'
+'ngMaterial',
+'ngMessages'
+
+
   ])
 
 

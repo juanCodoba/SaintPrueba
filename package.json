@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "main": "server/app.js",
   "dependencies": {
-    "@angular/material": "^6.3.0",
     "angular-font-awesome": "^3.1.2",
     "angular-material": "^1.1.9",
     "babel-polyfill": "^6.7.2",
