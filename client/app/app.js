@@ -7,15 +7,20 @@ angular.module('pruebaSaintApp', ['pruebaSaintApp.constants',
 'ngSanitize',
 'ui.router',
 'ngMaterial',
-'ngMessages'
+'ngMessages',
+
 
 
   ])
 
 
   .constant("API","http://localhost:8080/puebaCfipSaint")
-  .config(function($urlRouterProvider, $locationProvider) {
+  .config(function($urlRouterProvider, $locationProvider, $authProvider,API) {
     $urlRouterProvider.otherwise('/');
-
     $locationProvider.html5Mode(true);
+
+    $authProvider.loginUrl = API + '/api/auth/login';
+    $authProvider.tokenName = 'token';
+    $authProvider.tokenPredix = 'pruebaSaint';
+
   });
